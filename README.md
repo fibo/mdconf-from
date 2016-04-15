@@ -4,7 +4,7 @@
 
 [![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
 
-[![NPM version](https://badge.fury.io/js/algebra-group.svg)](http://badge.fury.io/js/algebra-group) [![Build Status](https://travis-ci.org/fibo/algebra-group.svg?branch=master)](https://travis-ci.org/fibo/algebra-group?branch=master) [![Dependency Status](https://gemnasium.com/fibo/algebra-group.svg)](https://gemnasium.com/fibo/algebra-group)
+[![NPM version](https://badge.fury.io/js/mdconf-from.svg)](http://badge.fury.io/js/mdconf-from) [![Build Status](https://travis-ci.org/fibo/mdconf-from.svg?branch=master)](https://travis-ci.org/fibo/mdconf-from?branch=master) [![Dependency Status](https://gemnasium.com/fibo/mdconf-from.svg)](https://gemnasium.com/fibo/mdconf-from)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
