@@ -42,19 +42,25 @@ See [mdconf][mdconf] to learn how *Markdown driven configuration* works.
     var fs = require('fs')
     var mdconf = require('mdconf')
 
+See [API](#api) section
+
     function mdconfFrom (file) {
       var content = fs.readFileSync(file, 'utf8')
 
       var markdownObj = mdconf(content)
 
+Assume there is a **single h1** section and get its name
+
       var rootKey = Object.keys(markdownObj)[0]
 
-Assume there is a `## Configuration` section and read it
+Assume there is a `## Configuration` section and return it
 
       var config = markdownObj[rootKey].configuration
 
       return config
     }
+
+Export function
 
     module.exports = mdconfFrom
 
