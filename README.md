@@ -8,20 +8,31 @@
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
+[Installation](#installation) |
+[API](#api) |
+[Annotated source](#annotated-source)
+
 ## Installation
 
-```
+```bash
 npm install mdconf-from --save
 ```
 
 ## API
+
+This package assumes that:
+1. The markdown file is utf8 encoded.
+2. There is a **single h1** section.
+3. There is a `## Configuration` section.
+
+See also [mdconf] to learn how *Markdown driven configuration* works.
 
 ### `mdconfFrom(file)`
 
 * **@param** `{String}` file relative path
 * **@returns** `{Object}` config
 
-```
+```javascript
 // Suppose you are parsing this file itself.
 var config = require('mdconf-from')('README.md')
 
@@ -37,24 +48,21 @@ here only for test and documentation purpouse.
 
 ## Annotated source
 
-See [mdconf][mdconf] to learn how *Markdown driven configuration* works.
+Actually this package is a wrapper around [mdconf].
 
     var fs = require('fs')
     var mdconf = require('mdconf')
 
-See [API](#api) section
-
     function mdconfFrom (file) {
-      var content = fs.readFileSync(file, 'utf8')
 
+Parse the markdown in given file.
+
+      var content = fs.readFileSync(file, 'utf8')
       var markdownObj = mdconf(content)
 
-Assume there is a **single h1** section and get its name
+Extract the *Configuration* section.
 
       var rootKey = Object.keys(markdownObj)[0]
-
-Assume there is a `## Configuration` section and return it
-
       var config = markdownObj[rootKey].configuration
 
       return config
@@ -68,4 +76,4 @@ Export function
 
 [MIT](http://g14n.info/mit-license)
 
-[mdconf]: https://github.com/tj/mdconf
+[mdconf]: https://github.com/tj/mdconf "mdconf"
