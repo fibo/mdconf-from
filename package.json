@@ -1,6 +1,6 @@
 {
   "name": "mdconf-from",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "parses a markdown file and returns a configuration object",
   "main": "index.js",
   "scripts": {
