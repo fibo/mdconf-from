@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "check-deps": "npm outdated",
-    "lint": "standard",
+    "lint": "standa",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
     "postupdate-deps": "npm test && git commit -am 'updated deps' || git checkout -- package.json",
     "test": "tape test.js",
@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "pre-commit": "^1.1.2",
-    "standard": "^7.1.2",
+    "standa": "^1.1.0",
     "tape": "^4.5.1"
   }
 }

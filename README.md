@@ -2,15 +2,14 @@
 
 > parses a markdown file and returns a configuration object
 
-[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
-
-[![NPM version](https://badge.fury.io/js/mdconf-from.svg)](http://badge.fury.io/js/mdconf-from) [![Build Status](https://travis-ci.org/fibo/mdconf-from.svg?branch=master)](https://travis-ci.org/fibo/mdconf-from?branch=master) [![Dependency Status](https://gemnasium.com/fibo/mdconf-from.svg)](https://gemnasium.com/fibo/mdconf-from)
-
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
-
 [Installation](#installation) |
 [API](#api) |
 [Annotated source](#annotated-source)
+[License](#license)
+
+[![NPM version](https://badge.fury.io/js/mdconf-from.svg)](http://badge.fury.io/js/mdconf-from) [![Build Status](https://travis-ci.org/fibo/mdconf-from.svg?branch=master)](https://travis-ci.org/fibo/mdconf-from?branch=master) [![Dependency Status](https://gemnasium.com/fibo/mdconf-from.svg)](https://gemnasium.com/fibo/mdconf-from)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![KLP](https://img.shields.io/badge/kiss-literate-orange.svg)](http://g14n.info/kiss-literate-programming)
 
 ## Installation
 
@@ -23,7 +22,7 @@ npm install mdconf-from --save
 This package assumes that:
 1. The markdown file is utf8 encoded.
 2. There is a **single h1** section.
-3. There is a `## Configuration` section.
+3. There is a `## Configuration` section, like [this](#configuration).
 
 See also [mdconf] to learn how *Markdown driven configuration* works.
 
