@@ -30,7 +30,7 @@
   "bugs": {
     "url": "https://github.com/fibo/mdconf-from/issues"
   },
-  "homepage": "http://npm.im/mdconf-from",
+  "homepage": "http://g14n.info/mdconf-from",
   "dependencies": {
     "mdconf": "0.0.2"
   },
